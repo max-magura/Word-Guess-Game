@@ -49,11 +49,18 @@ document.onkeyup = function game(event) {
     if (correctAnswer === currentWord) {
       numWins++;
       console.log("yes");
-      var winning = true
       numGuesses=10;
       guessesLettersArray=[];
       currentWordArray=[]
-      alert("Correct! The word was " + correctAnswer)
+      alert("Correct! The word was " + currentWord)
+      setup();
+    }
+
+    if (numGuesses === 0) {
+      numGuesses=10;
+      guessesLettersArray=[];
+      currentWordArray=[]
+      alert("Wrong! The word was " + currentWord)
       setup();
     }
 
