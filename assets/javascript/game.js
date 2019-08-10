@@ -33,7 +33,7 @@ document.onkeyup = function game(event) {
 
       for (var j = 0; j < currentWord.length; j++) {
         if (currentWord[j] === userGuess) {
-        currentWordArray[j] = userGuess;
+          currentWordArray[j] = userGuess;
         }
 
       }
@@ -64,9 +64,11 @@ document.onkeyup = function game(event) {
       setup();
     }
 
+    var currentWordArrayNoCommas = currentWordArray.join("  ");
+
     wins.innerHTML = numWins;
     guesses.innerHTML = numGuesses;
     guessesLettersArrayObject.textContent = guessesLettersArray;
-    currentWordArrayObject.textContent = currentWordArray; 
+    currentWordArrayObject.textContent = currentWordArrayNoCommas; 
 }
 }
