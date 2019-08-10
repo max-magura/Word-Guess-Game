@@ -15,7 +15,7 @@ currentWordArrayObject = document.getElementById("current-word");
 
 window.onload = function setup() {
 
- var wordChoices = [ "michael", "dwight", "scranton", "jim", "pam", "creed", "jan", "ryan", "oscar", "erin", "andy", "beets", "bears", "angela", "meredith", "stanley", "sabre", "dunder", "mifflin", "daryl", "kelly", "toby", "kevin", "tots", "dundies", "athlead", "surplus", "stutter", "benihana", "bankruptcy"
+ var wordChoices = [ "michael", "dwight", "scranton", "jim", "pam", "creed", "jan", "ryan", "oscar", "erin", "andy", "beets", "bears", "angela", "meredith", "stanley", "sabre", "dunder", "phyllis", "mifflin", "darryl", "kelly", "toby", "kevin", "tots", "dundies", "athlead", "surplus", "stutter", "benihana", "bankruptcy"
   ];  
   
 var currentWord = wordChoices[Math.floor(Math.random() * wordChoices.length)];
